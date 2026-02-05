@@ -89,14 +89,14 @@ WSGI_APPLICATION = 'azure_project.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'bearlab-sql-db',
-        'USER': 'bearlab-admin',
-        'PASSWORD': 'P@ss1234',
-        'HOST': 'bearlab-sql-server.database.windows.net',
-        'PORT': '1433',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 18 for SQL Server',
+         'ENGINE': 'mssql',
+         'NAME': 'TH3',
+         'USER': 'chawakorn.prase',
+         'PASSWORD': 'rB3C4LLbbJ@xkF2',
+         'HOST': 'thgg1.database.windows.net',
+         'PORT': '1433',
+         'OPTIONS': {
+             'driver': 'ODBC Driver 18 for SQL Server',
         },
     },
 }
