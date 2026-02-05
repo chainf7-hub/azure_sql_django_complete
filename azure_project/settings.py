@@ -89,14 +89,14 @@ WSGI_APPLICATION = 'azure_project.wsgi.application'
 # }
 DATABASES = {
     'default': {
-         'ENGINE': 'mssql',
-         'NAME': 'TH3',
-         'USER': 'chawakorn.prase',
-         'PASSWORD': 'rB3C4LLbbJ@xkF2',
-         'HOST': 'thgg1.database.windows.net',
-         'PORT': '1433',
-         'OPTIONS': {
-             'driver': 'ODBC Driver 18 for SQL Server',
+        'ENGINE': 'mssql',
+        'NAME': 'bearlab-sql-db',
+        'USER': 'bearlab-admin',
+        'PASSWORD': 'P@ss1234',
+        'HOST': 'bearlab-sql-server.database.windows.net',
+        'PORT': '1433',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 18 for SQL Server',
         },
     },
 }
@@ -105,11 +105,11 @@ DATABASES = {
 import urllib.parse
 
 # MongoDB Configuration
-mongo_username = urllib.parse.quote_plus('bearlab')
-mongo_password = urllib.parse.quote_plus('P@ss1234')
+mongo_username = urllib.parse.quote_plus('chainmongo')
+mongo_password = urllib.parse.quote_plus('Azure23918')
 # MONGO_URI = 'mongodb://localhost:27017/'
-MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@bearlab-mongodb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
-MONGO_DB_NAME = 'django_store_reviews'
+MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@chain-mongo.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
+MONGO_DB_NAME = 'chain-mongo'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
